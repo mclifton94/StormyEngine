@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F9431B3C1CD7E32C00078817 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9431B3B1CD7E32C00078817 /* main.cpp */; };
+		F9431B441CD7E3E600078817 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B421CD7E3E600078817 /* OpenCL.framework */; };
+		F9431B451CD7E3E600078817 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B431CD7E3E600078817 /* OpenGL.framework */; };
+		F9431B4A1CD7E40200078817 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B491CD7E40200078817 /* libfreeimage.a */; };
+		F9431B4C1CD7E40D00078817 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B4B1CD7E40D00078817 /* libGLEW.a */; };
+		F9431B4E1CD7E41800078817 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B4D1CD7E41800078817 /* libglfw3.a */; };
+		F9431B541CD7E85500078817 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B531CD7E85500078817 /* OpenAL.framework */; };
+		F9431B561CD7E86300078817 /* libcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B551CD7E86300078817 /* libcommon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		F9431B381CD7E32C00078817 /* Stormy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stormy; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9431B3B1CD7E32C00078817 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F9431B421CD7E3E600078817 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = Stormy/dependencies/OpenCL.framework; sourceTree = "<group>"; };
+		F9431B431CD7E3E600078817 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Stormy/dependencies/OpenGL.framework; sourceTree = "<group>"; };
+		F9431B491CD7E40200078817 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = Stormy/dependencies/freeimage/3.17.0/lib/libfreeimage.a; sourceTree = "<group>"; };
+		F9431B4B1CD7E40D00078817 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = Stormy/dependencies/glew/1.13.0/lib/libGLEW.a; sourceTree = "<group>"; };
+		F9431B4D1CD7E41800078817 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = Stormy/dependencies/glfw3/3.1.2/lib/libglfw3.a; sourceTree = "<group>"; };
+		F9431B531CD7E85500078817 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Stormy/dependencies/OpenAL.framework; sourceTree = "<group>"; };
+		F9431B551CD7E86300078817 /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon.a; path = Stormy/dependencies/OpenAL/Libs/libcommon.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9431B561CD7E86300078817 /* libcommon.a in Frameworks */,
+				F9431B4E1CD7E41800078817 /* libglfw3.a in Frameworks */,
+				F9431B4C1CD7E40D00078817 /* libGLEW.a in Frameworks */,
+				F9431B4A1CD7E40200078817 /* libfreeimage.a in Frameworks */,
+				F9431B541CD7E85500078817 /* OpenAL.framework in Frameworks */,
+				F9431B441CD7E3E600078817 /* OpenCL.framework in Frameworks */,
+				F9431B451CD7E3E600078817 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +62,7 @@
 		F9431B2F1CD7E32C00078817 = {
 			isa = PBXGroup;
 			children = (
+				F9431B571CD7E89000078817 /* dependencies */,
 				F9431B3A1CD7E32C00078817 /* Stormy */,
 				F9431B391CD7E32C00078817 /* Products */,
 			);
@@ -60,6 +82,28 @@
 				F9431B3B1CD7E32C00078817 /* main.cpp */,
 			);
 			path = Stormy;
+			sourceTree = "<group>";
+		};
+		F9431B571CD7E89000078817 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B581CD7E8AC00078817 /* resources */,
+				F9431B491CD7E40200078817 /* libfreeimage.a */,
+				F9431B4B1CD7E40D00078817 /* libGLEW.a */,
+				F9431B4D1CD7E41800078817 /* libglfw3.a */,
+				F9431B551CD7E86300078817 /* libcommon.a */,
+				F9431B431CD7E3E600078817 /* OpenGL.framework */,
+				F9431B421CD7E3E600078817 /* OpenCL.framework */,
+				F9431B531CD7E85500078817 /* OpenAL.framework */,
+			);
+			name = dependencies;
+			sourceTree = "<group>";
+		};
+		F9431B581CD7E8AC00078817 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +253,24 @@
 		F9431B401CD7E32C00078817 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stormy/dependencies",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Dependencies/glew/1.13.0/include",
+					"$(PROJECT_DIR)/Dependencies/glfw3/3.1.2/include",
+					"$(PROJECT_DIR)/Dependencies/freeimage/3.17.0/include",
+					"$(PROJECT_DIR)/Dependencies/openal/Headers",
+					"$(PROJECT_DIR)/Dependencies/openal/Headers/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stormy/dependencies/freeimage/3.17.0/lib",
+					"$(PROJECT_DIR)/Stormy/dependencies/glew/1.13.0/lib",
+					"$(PROJECT_DIR)/Stormy/dependencies/glfw3/3.1.2/lib",
+					"$(PROJECT_DIR)/Stormy/dependencies/OpenAL/Libs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +278,24 @@
 		F9431B411CD7E32C00078817 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stormy/dependencies",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Dependencies/glew/1.13.0/include",
+					"$(PROJECT_DIR)/Dependencies/glfw3/3.1.2/include",
+					"$(PROJECT_DIR)/Dependencies/freeimage/3.17.0/include",
+					"$(PROJECT_DIR)/Dependencies/openal/Headers",
+					"$(PROJECT_DIR)/Dependencies/openal/Headers/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stormy/dependencies/freeimage/3.17.0/lib",
+					"$(PROJECT_DIR)/Stormy/dependencies/glew/1.13.0/lib",
+					"$(PROJECT_DIR)/Stormy/dependencies/glfw3/3.1.2/lib",
+					"$(PROJECT_DIR)/Stormy/dependencies/OpenAL/Libs",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +319,7 @@
 				F9431B411CD7E32C00078817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
