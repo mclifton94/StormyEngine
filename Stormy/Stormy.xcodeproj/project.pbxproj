@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F9431B3C1CD7E32C00078817 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9431B3B1CD7E32C00078817 /* main.cpp */; };
 		F9431B441CD7E3E600078817 /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B421CD7E3E600078817 /* OpenCL.framework */; };
-		F9431B451CD7E3E600078817 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B431CD7E3E600078817 /* OpenGL.framework */; };
 		F9431B4A1CD7E40200078817 /* libfreeimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B491CD7E40200078817 /* libfreeimage.a */; };
 		F9431B4C1CD7E40D00078817 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B4B1CD7E40D00078817 /* libGLEW.a */; };
 		F9431B4E1CD7E41800078817 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B4D1CD7E41800078817 /* libglfw3.a */; };
 		F9431B541CD7E85500078817 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B531CD7E85500078817 /* OpenAL.framework */; };
 		F9431B561CD7E86300078817 /* libcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B551CD7E86300078817 /* libcommon.a */; };
+		F9431B631CD7EA1900078817 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9431B611CD7EA1900078817 /* game.cpp */; };
+		F9431B681CD7ECAD00078817 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9431B661CD7ECAD00078817 /* window.cpp */; };
+		F9431B691CD7EE8D00078817 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9431B431CD7E3E600078817 /* OpenGL.framework */; };
+		F9431B6D1CD802C200078817 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9431B6C1CD802C200078817 /* Test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		F9431B381CD7E32C00078817 /* Stormy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stormy; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9431B3B1CD7E32C00078817 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F9431B421CD7E3E600078817 /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = Stormy/dependencies/OpenCL.framework; sourceTree = "<group>"; };
 		F9431B431CD7E3E600078817 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Stormy/dependencies/OpenGL.framework; sourceTree = "<group>"; };
 		F9431B491CD7E40200078817 /* libfreeimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreeimage.a; path = Stormy/dependencies/freeimage/3.17.0/lib/libfreeimage.a; sourceTree = "<group>"; };
@@ -39,6 +40,12 @@
 		F9431B4D1CD7E41800078817 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = Stormy/dependencies/glfw3/3.1.2/lib/libglfw3.a; sourceTree = "<group>"; };
 		F9431B531CD7E85500078817 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Stormy/dependencies/OpenAL.framework; sourceTree = "<group>"; };
 		F9431B551CD7E86300078817 /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon.a; path = Stormy/dependencies/OpenAL/Libs/libcommon.a; sourceTree = "<group>"; };
+		F9431B611CD7EA1900078817 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = sources/game/interface/game.cpp; sourceTree = "<group>"; };
+		F9431B621CD7EA1900078817 /* game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = game.hpp; path = sources/game/interface/game.hpp; sourceTree = "<group>"; };
+		F9431B641CD7EAB500078817 /* gamestate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = gamestate.hpp; path = sources/game/state/gamestate.hpp; sourceTree = "<group>"; };
+		F9431B661CD7ECAD00078817 /* window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = window.cpp; path = sources/opengl/window/window.cpp; sourceTree = "<group>"; };
+		F9431B671CD7ECAD00078817 /* window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = window.hpp; path = sources/opengl/window/window.hpp; sourceTree = "<group>"; };
+		F9431B6C1CD802C200078817 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Test.cpp; path = Stormy/Implementations/Test/Test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +59,7 @@
 				F9431B4A1CD7E40200078817 /* libfreeimage.a in Frameworks */,
 				F9431B541CD7E85500078817 /* OpenAL.framework in Frameworks */,
 				F9431B441CD7E3E600078817 /* OpenCL.framework in Frameworks */,
-				F9431B451CD7E3E600078817 /* OpenGL.framework in Frameworks */,
+				F9431B691CD7EE8D00078817 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +69,10 @@
 		F9431B2F1CD7E32C00078817 = {
 			isa = PBXGroup;
 			children = (
+				F9431B581CD7E8AC00078817 /* resources */,
 				F9431B571CD7E89000078817 /* dependencies */,
 				F9431B3A1CD7E32C00078817 /* Stormy */,
+				F9431B6A1CD8028C00078817 /* Implementations */,
 				F9431B391CD7E32C00078817 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +88,10 @@
 		F9431B3A1CD7E32C00078817 /* Stormy */ = {
 			isa = PBXGroup;
 			children = (
-				F9431B3B1CD7E32C00078817 /* main.cpp */,
+				F9431B5D1CD7E98A00078817 /* game */,
+				F9431B5C1CD7E98300078817 /* opencl */,
+				F9431B5B1CD7E97D00078817 /* openal */,
+				F9431B5A1CD7E97400078817 /* opengl */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -87,7 +99,6 @@
 		F9431B571CD7E89000078817 /* dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				F9431B581CD7E8AC00078817 /* resources */,
 				F9431B491CD7E40200078817 /* libfreeimage.a */,
 				F9431B4B1CD7E40D00078817 /* libGLEW.a */,
 				F9431B4D1CD7E41800078817 /* libglfw3.a */,
@@ -106,6 +117,79 @@
 			name = resources;
 			sourceTree = "<group>";
 		};
+		F9431B5A1CD7E97400078817 /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B651CD7EC9500078817 /* window */,
+			);
+			name = opengl;
+			sourceTree = "<group>";
+		};
+		F9431B5B1CD7E97D00078817 /* openal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = openal;
+			sourceTree = "<group>";
+		};
+		F9431B5C1CD7E98300078817 /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		F9431B5D1CD7E98A00078817 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B601CD7E9F300078817 /* interface */,
+				F9431B5E1CD7E99F00078817 /* state */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		F9431B5E1CD7E99F00078817 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B641CD7EAB500078817 /* gamestate.hpp */,
+			);
+			name = state;
+			sourceTree = "<group>";
+		};
+		F9431B601CD7E9F300078817 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B611CD7EA1900078817 /* game.cpp */,
+				F9431B621CD7EA1900078817 /* game.hpp */,
+			);
+			name = interface;
+			sourceTree = "<group>";
+		};
+		F9431B651CD7EC9500078817 /* window */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B661CD7ECAD00078817 /* window.cpp */,
+				F9431B671CD7ECAD00078817 /* window.hpp */,
+			);
+			name = window;
+			sourceTree = "<group>";
+		};
+		F9431B6A1CD8028C00078817 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B6B1CD8029F00078817 /* Test */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		F9431B6B1CD8029F00078817 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				F9431B6C1CD802C200078817 /* Test.cpp */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,8 +198,8 @@
 			buildConfigurationList = F9431B3F1CD7E32C00078817 /* Build configuration list for PBXNativeTarget "Stormy" */;
 			buildPhases = (
 				F9431B341CD7E32C00078817 /* Sources */,
-				F9431B351CD7E32C00078817 /* Frameworks */,
 				F9431B361CD7E32C00078817 /* CopyFiles */,
+				F9431B351CD7E32C00078817 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9431B3C1CD7E32C00078817 /* main.cpp in Sources */,
+				F9431B681CD7ECAD00078817 /* window.cpp in Sources */,
+				F9431B6D1CD802C200078817 /* Test.cpp in Sources */,
+				F9431B631CD7EA1900078817 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,23 +339,25 @@
 		F9431B401CD7E32C00078817 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Stormy/dependencies",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stormy/Dependencies",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Dependencies/glew/1.13.0/include",
-					"$(PROJECT_DIR)/Dependencies/glfw3/3.1.2/include",
-					"$(PROJECT_DIR)/Dependencies/freeimage/3.17.0/include",
-					"$(PROJECT_DIR)/Dependencies/openal/Headers",
-					"$(PROJECT_DIR)/Dependencies/openal/Headers/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glew/1.13.0/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glfw3/3.1.2/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/freeimage/3.17.0/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/openal/Headers",
+					"$(PROJECT_DIR)/Stormy/Dependencies/openal/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Stormy/dependencies/freeimage/3.17.0/lib",
-					"$(PROJECT_DIR)/Stormy/dependencies/glew/1.13.0/lib",
-					"$(PROJECT_DIR)/Stormy/dependencies/glfw3/3.1.2/lib",
-					"$(PROJECT_DIR)/Stormy/dependencies/OpenAL/Libs",
+					"$(PROJECT_DIR)/Stormy/Dependencies/freeimage/3.17.0/lib",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glew/1.13.0/lib",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glfw3/3.1.2/lib",
+					"$(PROJECT_DIR)/Stormy/Dependencies/openal/Libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -278,23 +366,25 @@
 		F9431B411CD7E32C00078817 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Stormy/dependencies",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stormy/Dependencies",
 				);
 				HEADER_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/Dependencies/glew/1.13.0/include",
-					"$(PROJECT_DIR)/Dependencies/glfw3/3.1.2/include",
-					"$(PROJECT_DIR)/Dependencies/freeimage/3.17.0/include",
-					"$(PROJECT_DIR)/Dependencies/openal/Headers",
-					"$(PROJECT_DIR)/Dependencies/openal/Headers/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glew/1.13.0/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glfw3/3.1.2/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/freeimage/3.17.0/include",
+					"$(PROJECT_DIR)/Stormy/Dependencies/openal/Headers",
+					"$(PROJECT_DIR)/Stormy/Dependencies/openal/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Stormy/dependencies/freeimage/3.17.0/lib",
-					"$(PROJECT_DIR)/Stormy/dependencies/glew/1.13.0/lib",
-					"$(PROJECT_DIR)/Stormy/dependencies/glfw3/3.1.2/lib",
-					"$(PROJECT_DIR)/Stormy/dependencies/OpenAL/Libs",
+					"$(PROJECT_DIR)/Stormy/Dependencies/freeimage/3.17.0/lib",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glew/1.13.0/lib",
+					"$(PROJECT_DIR)/Stormy/Dependencies/glfw3/3.1.2/lib",
+					"$(PROJECT_DIR)/Stormy/Dependencies/openal/Libs",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
